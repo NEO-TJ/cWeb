@@ -1,4 +1,3 @@
-<?php $this->load->helper('url'); ?>
 <div class="navbar-header">
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
   <div class="container">
