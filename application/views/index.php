@@ -37,24 +37,24 @@
       } else if ($ch_menu == 'message') { $this->load->view('message');
       } else if ($ch_menu == 'about2') { $this->load->view('about2');
       } else if ($ch_menu == 'Profile') { $this->load->view('Profile');
-      } else if ($ch_menu=='The_news') { $this->load->view('The_news');
-      } else if ($ch_menu=='Gallery') { $this->load->view('Gallery');
-      } else if ($ch_menu=='Important') { $this->load->view('Important');
-      } else if ($ch_menu=='Press_Releases') { $this->load->view('Press_Releases');
-      } else if ($ch_menu=='The_news_deatail') { $this->load->view('The_news_deatail');
-      } else if ($ch_menu=='Vision') { $this->load->view('Vision');
-      } else if ($ch_menu=='Organization') { $this->load->view('Organization');
-      } else if ($ch_menu=='Committee') { $this->load->view('Committee');
-      } else if ($ch_menu=='Management') { $this->load->view('Management');
-      } else if ($ch_menu=='Subsidiaries') { $this->load->view('Subsidiaries');
-      } else if ($ch_menu=='Ethice') { $this->load->view('Ethice');
-      } else if ($ch_menu=='Whistle') { $this->load->view('Whistle');
-      } else if ($ch_menu=='Stock_Ex') { $this->load->view('Stock_Ex');
-      } else if ($ch_menu=='Newsroom') { $this->load->view('Newsroom');
-      } else if ($ch_menu=='Publications') { $this->load->view('Publications');
-      } else if ($ch_menu=='Event_Pre') { $this->load->view('Event_Pre');
-      } else if ($ch_menu=='Information') { $this->load->view('Information');
-      } else if ($ch_menu=='Activities') { $this->load->view('Activities');
+      } else if ($ch_menu == 'The_news') { $this->load->view('The_news');
+      } else if ($ch_menu == 'Gallery') { $this->load->view('Gallery');
+      } else if ($ch_menu == 'Important') { $this->load->view('Important');
+      } else if ($ch_menu == 'Press_Releases') { $this->load->view('Press_Releases');
+      } else if ($ch_menu == 'The_news_deatail') { $this->load->view('The_news_deatail');
+      } else if ($ch_menu == 'Vision') { $this->load->view('Vision');
+      } else if ($ch_menu == 'Organization') { $this->load->view('Organization');
+      } else if ($ch_menu == 'Committee') { $this->load->view('Committee');
+      } else if ($ch_menu == 'Management') { $this->load->view('Management');
+      } else if ($ch_menu == 'Subsidiaries') { $this->load->view('Subsidiaries');
+      } else if ($ch_menu == 'Ethice') { $this->load->view('Ethice');
+      } else if ($ch_menu == 'Whistle') { $this->load->view('Whistle');
+      } else if ($ch_menu == 'Stock_Ex') { $this->load->view('Stock_Ex');
+      } else if ($ch_menu == 'Newsroom') { $this->load->view('Newsroom');
+      } else if ($ch_menu == 'Publications') { $this->load->view('Publications');
+      } else if ($ch_menu == 'Event_Pre') { $this->load->view('Event_Pre');
+      } else if ($ch_menu == 'Information') { $this->load->view('Information');
+      } else if ($ch_menu == 'Activities') { $this->load->view('Activities');
       } else { $this->load->view('content'); }
     ?>
 
@@ -62,11 +62,18 @@
     <?php $this->load->view('footer')?>
 
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <?php //echo js_asset("index.js"); ?>
-    <script  src="http://mis.ijm.co.th/test/js/index.js"></script>
+    <?php echo js_asset("index.js"); ?>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-    <script type="text/javascript" src="http://mis.ijm.co.th/test/js/jquery.1.11.1.js"></script> 
+    <?php echo js_asset("jquery.1.11.1.js"); ?>
     <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <?php echo js_asset("bootstrap.js"); ?>
+    <?php echo js_asset("SmoothScroll.js"); ?>
+    <?php echo js_asset("jquery.prettyPhoto.js"); ?>
+    <?php echo js_asset("jquery.isotope.js"); ?>
+    <?php echo js_asset("jquery.parallax.js"); ?>
+    <?php echo js_asset("jqBootstrapValidation.js"); ?>
+    <?php echo js_asset("contact_me.js"); ?>
+<!--
     <script type="text/javascript" src="http://mis.ijm.co.th/test/js/bootstrap.js"></script> 
     <script type="text/javascript" src="http://mis.ijm.co.th/test/js/SmoothScroll.js"></script> 
     <script type="text/javascript" src="http://mis.ijm.co.th/test/js/jquery.prettyPhoto.js"></script> 
@@ -74,11 +81,16 @@
     <script type="text/javascript" src="http://mis.ijm.co.th/test/js/jquery.parallax.js"></script> 
     <script type="text/javascript" src="http://mis.ijm.co.th/test/js/jqBootstrapValidation.js"></script> 
     <script type="text/javascript" src="http://mis.ijm.co.th/test/js/contact_me.js"></script> 
-
+-->
     <!-- Javascripts ================================================== --> 
+    <?php echo js_asset("main.js"); ?>
+    <?php echo my_js_asset("plugin/slider/js/jquery.cslider.js"); ?>
+    <?php echo my_js_asset("plugin/slider/js/modernizr-latest.js"); ?>
+<!--
     <script type="text/javascript" src="http://mis.ijm.co.th/test/js/main.js"></script>
     <script src="http://mis.ijm.co.th/test/js_slider/jquery.cslider.js"></script>
     <script src="http://mis.ijm.co.th/test/js_slider/modernizr-latest.js"></script>
+-->
 
     <script type="text/javascript">
       $(window).load(function(){			
